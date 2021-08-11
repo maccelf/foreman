@@ -125,9 +125,6 @@ module Api
 
       api :POST, "/hosts/", N_("Create a host")
       param_group :host, :as => :create
-      param :host, Hash do
-        param :overwrite, :bool, :desc => N_("Overwrite existing host (true by default)")
-      end
 
       def create
         @parameters = true
